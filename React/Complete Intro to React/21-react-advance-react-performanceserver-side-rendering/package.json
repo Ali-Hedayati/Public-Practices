@@ -1,0 +1,30 @@
+{
+  "name": "3-react-with-jsx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build:client": "vite build --outDir ../dist/client",
+    "build:server": "vite build --outDir ../dist/server --ssr ServerApp.jsx",
+    "build": "npm run build:client && npm run build:server",
+    "start": "node server.js",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^2.1.0",
+    "vite": "^3.1.4"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^4.10.1",
+    "express": "^4.18.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.1"
+  }
+}
