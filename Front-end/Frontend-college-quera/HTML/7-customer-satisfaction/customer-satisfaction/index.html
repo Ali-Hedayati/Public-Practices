@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+    <body dir="rtl">
+      <form action="http://localhost:8080/vote" method="post">
+        <label for="name">نام</label><br />
+        <input id="name" name="name" value="username" placeholder="نام خود را وارد کنید:" type="text" required /><br />
+        <label for="email">ایمیل</label><br />
+        <input id="email" name="email" value="email" placeholder="لطفا ایمیل خود را وارد کنید:" type="email" required />
+		<br/><br/>
+        <span>از چه سرویس‌هایی استفاده کردید؟</span>
+			<input type="checkbox" id="sauna" name="services" value="sauna"/>
+			<label for="sauna">سونا</label>
+			<input type="checkbox" id="jacuzzi" name="services" value="jacuzzi"/>
+			<label for="jacuzzi">جکوزی</label>
+			<input type="checkbox" id="pool" name="services" value="pool"/>
+			<label for="pool">استخر</label>
+        <br /><br />
+        <span>آیا از کیفیت سرویس ارائه شده راضی بودید؟</span>
+        <input type="radio" id="yes" name="satisfaction" value="yes"/>
+        <label for="yes">بله</label>
+        <input type="radio" id="no" name="satisfaction" value="no"/>
+        <label for="no">خیر</label>
+		<br /><br />
+		<select id="branch" name="branch">
+			<option value="0" disabled selected >انتخاب شعبه</option>
+			<option value="1">شعبه یک</option>
+			<option value="2">شعبه دو</option>
+			<option value="3">شعبه سه</option>
+			<option value="4">شعبه چهار</option>
+        </select>
+		<br /><br />
+        <label for="score">امتیاز</label><br />
+        <input type="number" id="score" name="score" value="score" min="1" max="5" required />
+  
+        <br /><br />
+        <input type="submit" value="ثبت" />
+      </form>
+    </body>
+</html>
