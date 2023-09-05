@@ -1,8 +1,0 @@
-#container p
-{
-	color:indigo
-	
-}
-div ~ p {
-	color:indianred 
-}
