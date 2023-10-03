@@ -1,0 +1,1 @@
+export const solver = (text) => text.split(' ').filter((c , i) => (c % 6) == 0 && ((i+1) % 6) == 0 ).join(' ')

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../tailwind.js"></script>
+    <script>
+      try {
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                vazir: "'Vazir', sans-serif",
+              },
+            },
+          },
+        };
+      } catch {}
+    </script>
+    <style type="text/tailwindcss">
+      @layer base {
+        @font-face {
+          font-family: "Vazir";
+          font-weight: normal;
+          src: url("./fonts/Vazir.ttf");
+        }
+
+        @font-face {
+          font-family: "Vazir";
+          font-weight: bold;
+          src: url("./fonts/Vazir-Bold.ttf");
+        }
+      }
+
+      @layer utilities {
+        .max-width-wrapper {
+          max-width: 5xl;
+          margin: 0 auto;
+          padding: 4 0;
+        }
+        .primary-gradient {
+          @apply bg-gradient-to-l from-pink-500 via-red-500 to-yellow-500;
+        }
+        .gradient-border {
+          @apply before:primary-gradient 
+          relative before:absolute 
+          before:w-full before:h-full 
+          before:-z-10 before:rounded-md 
+          before:transition-transform 
+          before:duration-300 before:content-[''] hover:before:scale-105;
+        }
+      }
+      @layer components {
+        .ice-cream {
+          @apply .gradient-border;
+        }
+        .ice-cream img {
+          @apply w-72 h-60 rounded-md object-cover;
+        }
+      }
+    </style>
+  </head>
+  <body class="font-vazir bg-white min-h-[1000px]">
+    <!--PASTE YOUR CODE FROM PREVIOUS SECTIONS -->
+    <div id="super-header" class="h-2 primary-gradient"></div>
+    <header id="header" class="top-0 sticky -z-10 bg-white/50">
+      <div
+        id="header-inner-wrapper"
+        class="max-width-wrapper flex justify-between py-4"
+      >
+        <nav>
+          <h1
+            id="heading"
+            class="font-bold text-gray-800 border-y-2 border-dotted border-black"
+          >
+            <a href="#">گالری&nbsp;بستنی</a>
+          </h1>
+        </nav>
+        <div id="search-wrapper" class="relative mr-4">
+          <img
+            src="images/search.svg"
+            id="search-icon"
+            class="absolute left-4 top-1.5 h-4"
+          />
+          <input
+            type="text"
+            placeholder="قیفی"
+            id="search-input"
+            class="w-full outline-none border border-gray-400 text-sm text-gray-700 px-4 py-1 rounded-full"
+          />
+        </div>
+      </div>
+    </header>
+    <div
+      id="hero-wrapper"
+      class="h-[60vh] min-h-[18rem] flex justify-center items-center bg-[#fff899] relative"
+    >
+      <img
+        src="./images/hero.jpg"
+        id="hero-image"
+        class="h-full w-96 object-cover"
+      />
+      <img
+        src="./images/wave.svg"
+        id="hero-wave"
+        class="absolute bottom-0 w-full max-h-40"
+      />
+    </div>
+
+    <main
+      class="max-width-wrapper lg:py-20 md:py-10 py-10 flex justify-center flex-wrap gap-4 md:gap-6 lg:gap-8"
+    >
+      <figure class="ice-cream">
+        <img src="./images/1.jpg" />
+      </figure>
+      <figure class="ice-cream">
+        <img src="./images/2.jpg" />
+      </figure>
+      <figure class="ice-cream">
+        <img src="./images/3.jpg" />
+      </figure>
+      <figure class="ice-cream">
+        <img src="./images/4.jpg" />
+      </figure>
+      <figure class="ice-cream">
+        <img src="./images/5.jpg" />
+      </figure>
+      <figure class="ice-cream">
+        <img src="./images/6.jpg" />
+      </figure>
+    </main>
+  </body>
+</html>
