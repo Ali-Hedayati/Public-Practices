@@ -22,7 +22,6 @@ const SearchParams = () => {
     <div className="search-params">
       <form
         onSubmit={(e) => {
-          //e.preventDefault(); => submit safhe ro reload mikone defult, pas ma migim nakon.
           e.preventDefault();
           const formData = new FormData(e.target);
           const obj = {
@@ -49,10 +48,7 @@ const SearchParams = () => {
             <option />
 
             {Animals.map((animal) => (
-              // value => be server mide
-              // key => nemidonam ?
               <option key={animal} value={animal}>
-                {/* {animal => neshon mide} */}
                 {animal}
               </option>
             ))}

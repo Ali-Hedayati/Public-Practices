@@ -1,9 +1,6 @@
 import { useState } from "react";
 
 const SearchParams = () => {
-  // useState(n), n => meghdar avalie ast va faghat avalesh run mishe
-  //location => moteghayeri ke meghdar toosh hast
-  //setLocation => function baraye set kardane value
   const [location, setLocation] = useState("");
   const [animal, setAnimal] = useState("");
   const [breed, setBreed] = useState("");
@@ -18,7 +15,6 @@ const SearchParams = () => {
             id="location"
             value={location}
             placeholder="Location"
-            //e.target khode input hast
             onChange={(e) => setLocation(e.target.value)}
           />
         </label>
@@ -39,10 +35,7 @@ const SearchParams = () => {
             <option />
 
             {Animals.map((animal) => (
-              // value => be server mide
-              // key => nemidonam ?
               <option key={animal} value={animal}>
-                {/* {animal => neshon mide} */}
                 {animal}
               </option>
             ))}

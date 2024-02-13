@@ -1,4 +1,4 @@
-// hooks ba calss component nemiyad
+// we cant use class with hooks
 
 
 import { Component } from "react";

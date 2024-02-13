@@ -1,50 +1,46 @@
-// change import at top
 import { useEffect, useState } from "react";
 import Pet from "./Pet";
 
 const SearchParams = () => {
-  // useState(n), n => meghdar avalie ast va faghat avalesh run mishe
-  //location => moteghayeri ke meghdar toosh hast
-  //setLocation => function baraye set kardane value
   const [location, setLocation] = useState("");
   const [animal, setAnimal] = useState("");
   const [breed, setBreed] = useState("");
   const Animals = ["bird", "cat", "dog", "rabbit", "reptile"];
   const breeds = ["persian", "amaican", "germany", "itly"];
   // add to the other useStates inside component at top
-  // useState([])=> avalesh yekbar run mishe age nazari harbar ke yek taghiri ijad koni hey request mizane
+
   const [pets, setPets] = useState([]);
 
-  //in yek function ast ke chizhaye pardazeshi gheir az render ro hndle mikone mesle daryaft az server ya khandan etelaat az hafeze
-  //Be ebarati chizaei ke tool mikashe ro mizarim vGARNA SITE HANG MIKONE TA ETELAAT BEGIRE.
-  useEffect(() => {
-    //requestPets()=> in function miyad va az server data migire. va []
-    requestPets();
+  /////////NOTE//////////
+  {
+    /*
+    We use "useEffect" when we want to send or reseive deta from server and it may takes longer than we
+    expect, and we prevent crashes.
 
+    we use async functions when we want to work with fetch and server, this function actully runs simultaneously
+    with other functions. 
+*/
+  }
+
+  useEffect(() => {
+    requestPets();
   }, []);
 
-  //Function az noe async hast, in function movazi baghie chiza ejra mishe va barname sabr nenikone ke tamoom she
   async function requestPets() {
     const res = await fetch(
       `http://pets-v2.dev-apis.com/pets?animal=${animal}&location=${location}&breed=${breed}`
     );
     const json = await res.json();
-
-    //Chon barname sabr nemikone ta ejra tamoom she va maloom nist ke kei tamoom she,
-    //Ma nemitoonim meghdari ke inja daryaft mishe ro bedim be ghesmati ke element haye safhe ro render mikone
-    //ta in etelaat ro toosh bezare
-    //Pas chikar mikonim? miyam az tooye in function, element ha ro update mikonim.
     setPets(json.pets);
   }
 
   return (
     <div className="search-params">
       <form
-      onSubmit={(e)=> {
-        e.preventDefault();
-        requestPets();
-      }}
-      
+        onSubmit={(e) => {
+          e.preventDefault();
+          requestPets();
+        }}
       >
         <label htmlFor="location">
           Location
