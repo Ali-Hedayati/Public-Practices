@@ -1,39 +1,12 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
-import { useEffect, useState } from "react";
-import { CanceledError } from "./services/apiClient";
+
 import UserService, { UserType } from "./services/userService";
 import userService from "./services/userService";
+import useUsers from "./hooks/useUsers";
 
 function App() {
-  const [users, setUsers] = useState<UserType[]>([]);
-  const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
-  useEffect(() => {
-    //this is how you cancel a fetch request
-
-    setLoading(true);
-    const { request, cancel } = UserService.getAll<UserType>();
-
-    request
-      .then((res) => {
-        setUsers(res.data);
-        setLoading(false);
-      })
-      .catch((error) => {
-        if (error instanceof CanceledError) return;
-        setError(error.message);
-        setLoading(false);
-      });
-
-    // the code below dosent run in strick mode
-    // .finally(() => {
-    //   setLoading(false);
-    // });
-
-    //this is how you cancel a fetch request
-    return () => cancel();
-  }, []);
+  const { users, error, loading, setUsers, setError } = useUsers();
 
   /// how to delete a user
   const deleteMe = (user: UserType) => {
