@@ -1,1 +1,44 @@
+# Node.js
 node_modules/
+
+# PHPUnit
+.phpunit.cache
+.phpunit.result.cache
+
+# Laravel
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+/vendor
+
+# Environment files
+.env
+.env.backup
+.env.production
+
+# PHPactor (IDE tool)
+.phpactor.json
+
+# Homestead (Laravel virtual environment)
+Homestead.json
+Homestead.yaml
+
+# Composer authentication file
+auth.json
+
+# Debug logs
+npm-debug.log
+yarn-error.log
+
+# IDEs and editors
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+
+# Optional: System files (for macOS/Windows)
+.DS_Store
+Thumbs.db
