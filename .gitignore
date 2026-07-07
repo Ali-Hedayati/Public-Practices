@@ -42,3 +42,7 @@ yarn-error.log
 # Optional: System files (for macOS/Windows)
 .DS_Store
 Thumbs.db
+
+#vs code
+.vs/
+**/.vs/
