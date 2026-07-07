@@ -1,0 +1,7 @@
+E:\Ali-Hedayati\Public-Practices\.net\Learn C# Programming – Full Course with Mini-Projects\MyFirstProject_no1\MyFirstProject\bin\Debug\MyFirstProject.exe.config
+E:\Ali-Hedayati\Public-Practices\.net\Learn C# Programming – Full Course with Mini-Projects\MyFirstProject_no1\MyFirstProject\bin\Debug\MyFirstProject.exe
+E:\Ali-Hedayati\Public-Practices\.net\Learn C# Programming – Full Course with Mini-Projects\MyFirstProject_no1\MyFirstProject\bin\Debug\MyFirstProject.pdb
+E:\Ali-Hedayati\Public-Practices\.net\Learn C# Programming – Full Course with Mini-Projects\MyFirstProject_no1\MyFirstProject\obj\Debug\MyFirstProject.csproj.AssemblyReference.cache
+E:\Ali-Hedayati\Public-Practices\.net\Learn C# Programming – Full Course with Mini-Projects\MyFirstProject_no1\MyFirstProject\obj\Debug\MyFirstProject.csproj.CoreCompileInputs.cache
+E:\Ali-Hedayati\Public-Practices\.net\Learn C# Programming – Full Course with Mini-Projects\MyFirstProject_no1\MyFirstProject\obj\Debug\MyFirstProject.exe
+E:\Ali-Hedayati\Public-Practices\.net\Learn C# Programming – Full Course with Mini-Projects\MyFirstProject_no1\MyFirstProject\obj\Debug\MyFirstProject.pdb
