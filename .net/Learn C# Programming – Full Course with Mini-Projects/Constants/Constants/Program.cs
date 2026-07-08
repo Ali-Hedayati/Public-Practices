@@ -10,6 +10,12 @@ namespace Constants
     {
         static void Main(string[] args)
         {
+            int vat = 20;
+            vat = 10; // you cant change it
+
+            const int noChage = 20; // this can't change
+
+            Console.ReadLine();
         }
     }
 }
