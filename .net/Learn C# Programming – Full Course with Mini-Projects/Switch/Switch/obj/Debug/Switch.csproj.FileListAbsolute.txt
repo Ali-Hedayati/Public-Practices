@@ -1,0 +1,7 @@
+E:\Ali-Hedayati\Public-Practices\.net\Learn C# Programming – Full Course with Mini-Projects\Switch\Switch\obj\Debug\Switch.csproj.AssemblyReference.cache
+E:\Ali-Hedayati\Public-Practices\.net\Learn C# Programming – Full Course with Mini-Projects\Switch\Switch\obj\Debug\Switch.csproj.CoreCompileInputs.cache
+E:\Ali-Hedayati\Public-Practices\.net\Learn C# Programming – Full Course with Mini-Projects\Switch\Switch\bin\Debug\Switch.exe.config
+E:\Ali-Hedayati\Public-Practices\.net\Learn C# Programming – Full Course with Mini-Projects\Switch\Switch\bin\Debug\Switch.exe
+E:\Ali-Hedayati\Public-Practices\.net\Learn C# Programming – Full Course with Mini-Projects\Switch\Switch\bin\Debug\Switch.pdb
+E:\Ali-Hedayati\Public-Practices\.net\Learn C# Programming – Full Course with Mini-Projects\Switch\Switch\obj\Debug\Switch.exe
+E:\Ali-Hedayati\Public-Practices\.net\Learn C# Programming – Full Course with Mini-Projects\Switch\Switch\obj\Debug\Switch.pdb

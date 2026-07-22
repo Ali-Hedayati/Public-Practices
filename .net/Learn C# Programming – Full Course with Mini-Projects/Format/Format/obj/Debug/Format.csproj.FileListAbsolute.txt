@@ -1,0 +1,7 @@
+E:\Ali-Hedayati\Public-Practices\.net\Learn C# Programming – Full Course with Mini-Projects\Format\Format\bin\Debug\Format.exe.config
+E:\Ali-Hedayati\Public-Practices\.net\Learn C# Programming – Full Course with Mini-Projects\Format\Format\bin\Debug\Format.exe
+E:\Ali-Hedayati\Public-Practices\.net\Learn C# Programming – Full Course with Mini-Projects\Format\Format\bin\Debug\Format.pdb
+E:\Ali-Hedayati\Public-Practices\.net\Learn C# Programming – Full Course with Mini-Projects\Format\Format\obj\Debug\Format.csproj.AssemblyReference.cache
+E:\Ali-Hedayati\Public-Practices\.net\Learn C# Programming – Full Course with Mini-Projects\Format\Format\obj\Debug\Format.csproj.CoreCompileInputs.cache
+E:\Ali-Hedayati\Public-Practices\.net\Learn C# Programming – Full Course with Mini-Projects\Format\Format\obj\Debug\Format.exe
+E:\Ali-Hedayati\Public-Practices\.net\Learn C# Programming – Full Course with Mini-Projects\Format\Format\obj\Debug\Format.pdb
